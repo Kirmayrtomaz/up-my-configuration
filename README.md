@@ -36,14 +36,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Baixe o projeto para o computador
 
-```
-git clone https://github.com/powerline/fonts.git
-```
-Acesse a pasta e digite `./install.sh`
-
 ``` 
-cd fonts
-sudo ./install.sh
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
+fc-cache -vf ~/.fonts
+mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 ```
 
