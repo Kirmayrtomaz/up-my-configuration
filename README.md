@@ -13,10 +13,39 @@ Esse projeto tem como finalidade documentar as configurações do meu terminal
 sudo apt install terminator
 ```
 
+## Instalando Oh My ZSH
+
+```
+sudo apt-get install zsh
+```
 
 ## Oh My ZSH
 
 Customizando a interface de linha de comando 
+
+
+
+*Via Curl*
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+```
+
+
+### Install Powerline fonts
+
+Baixe o projeto para o computador
+
+```
+git clone https://github.com/powerline/fonts.git
+```
+Acesse a pasta e digite `./install.sh`
+
+``` 
+cd fonts
+sudo ./install.sh
+
+```
 
 
 
