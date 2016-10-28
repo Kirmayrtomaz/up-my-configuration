@@ -55,22 +55,6 @@ mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/
 
 Essa função instala o gerenciador automaticamente no projeto
 
-``` 
-curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
-```
+### Vim sublime
 
-Caso tenha problema, acesse o projeto nesse [link](https://github.com/egalpin/apt-vim)
-
-
-### Plugin NerdTree
-
-
-```
-apt-vim install -y https://github.com/scrooloose/nerdtree.git
-```
-
-```
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-```
+[Repositório com vários plugins para ajudar na instalação da customização do vim](https://github.com/grigio/vim-sublime)
